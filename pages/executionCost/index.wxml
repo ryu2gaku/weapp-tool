@@ -1,0 +1,46 @@
+<import src="./template/executionCostCalcDesc.wxml" />
+
+<view>
+  <page-head title="执行费" head-line desc="执行案件中当事人应当向法院交纳的费用"></page-head>
+
+  <view class="page-body page-bd-spacing">
+    <wux-cell-group>
+      <!-- 执行金额输入框 <Input组件> -->
+      <wux-cell hover-class="none">
+        <wux-input 
+          label="执行金额" 
+          extra="￥"
+          type="digit"
+          placeholder="请输入标的金额" 
+          clear
+          bind:change="onInput"
+          bind:clear="onClear"
+        />
+      </wux-cell>
+
+      <!-- 执行费速算表开关 <Switch组件> -->
+      <wux-cell title="执行费速算表">
+        <wux-switch 
+          slot="footer" 
+          color="light" 
+          value="{{ switchVal }}" 
+          bind:change="switchChange" 
+        />
+      </wux-cell>
+
+      <!-- 结果展示框 <List组件> -->
+      <wux-cell title="计算结果" extra="{{ result }}"></wux-cell>       
+    </wux-cell-group>
+
+    <!-- 动画组件 -->
+    <wux-animation-group 
+      in="{{ switchVal }}" 
+      enter="true" 
+      exit="true" 
+      class-names="wux-animate--fadeInRight">
+      <template is="executionCostCalcDesc" />
+    </wux-animation-group>
+  </view>
+
+  <page-footer></page-footer>
+</view>

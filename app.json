@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/executionCost/index",
+    "pages/interest/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小工具",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#7089E0",
+    "list": [
+      {
+        "pagePath": "pages/executionCost/index",
+        "text": "执行费",
+        "iconPath": "assets/imgs/zhi_xing_fei.png",
+        "selectedIconPath": "assets/imgs/zhi_xing_fei_hl.png"
+      },
+      {
+        "pagePath": "pages/interest/index",
+        "text": "利息",
+        "iconPath": "assets/imgs/li_xi.png",
+        "selectedIconPath": "assets/imgs/li_xi_hl.png"
+      }
+    ]
+  }
+}

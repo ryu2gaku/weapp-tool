@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "page-head": "/components/page-head/index",
+    "page-footer": "/components/page-footer/index",
+    "wux-cell-group": "/components/wux-weapp/cell-group/index",
+    "wux-cell": "/components/wux-weapp/cell/index",
+    "wux-input": "/components/wux-weapp/input/index",
+    "wux-select": "/components/wux-weapp/select/index",
+    "wux-calendar": "/components/wux-weapp/calendar/index",
+    "wux-icon": "/components/wux-weapp/icon/index",
+    "wux-button": "/components/wux-weapp/button/index",
+    "wux-radio-group": "/components/wux-weapp/radio-group/index",
+    "wux-radio": "/components/wux-weapp/radio/index"
+  }
+}

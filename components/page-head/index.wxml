@@ -1,0 +1,6 @@
+<!-- 页面标题组件 -->
+<view class='head'>
+  <view class='head-title'>{{title}}</view>
+  <view class='head-line' wx:if='{{headLine}}'></view>
+  <view class='head-desc' wx:if='{{desc}}'>{{desc}}</view>
+</view>

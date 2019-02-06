@@ -1,0 +1,16 @@
+page {
+  background-color: #F8F8F8;
+  font-size: 32rpx;
+  margin-bottom: 14rpx;
+  line-height: 1.6;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+.page-body {
+  padding-bottom: 90rpx;
+}
+
+.page-bd-spacing {
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+}

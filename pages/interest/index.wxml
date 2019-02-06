@@ -1,0 +1,75 @@
+<wux-select id="wux-select" />
+<wux-calendar id="wux-calendar" />
+
+
+<view>
+  <page-head title="利息" head-line desc="计算利息以及逾期违约金"></page-head>
+
+  <view class="page-body page-bd-spacing">
+
+    <wux-cell-group title="本金">
+      <!-- 本金输入框 Input组件-->
+      <wux-cell hover-class="none">
+        <wux-input 
+          label="本金" 
+          type="digit"
+          placeholder="请输入本金金额" 
+          extra="￥"
+          clear
+          value='{{ benJinVal }}'
+          controlled
+          bind:change="inputBenJin"
+          bind:clear="clearBenJin"
+        />
+      </wux-cell>
+        
+    </wux-cell-group>
+
+    <wux-cell-group title="利率">
+      <!-- 利率类型 Select组件-->
+      <wux-cell 
+        title="利率类型" 
+        extra="{{ liLvType.title }}" 
+        bind:click="selectLiLvType">
+      </wux-cell>
+      <!-- 利率输入框 Input组件-->
+      <wux-cell hover-class="none">
+        <wux-input 
+          label="利率" 
+          type="digit"
+          placeholder="请输入利率" 
+          extra="%"
+          clear
+          value='{{ liLvVal }}'
+          controlled
+          bind:change="inputLiLv"
+          bind:clear="clearLiLv"
+        />
+      </wux-cell>
+    </wux-cell-group>
+
+    <!-- Calendar组件 -->
+    <wux-cell-group title="日期">
+      <wux-cell title="起算日期" extra="{{ startDate }}" bind:click="chooseStartDate"></wux-cell>
+      <wux-cell title="结算日期" extra="{{ endDate }}" bind:click="chooseEndDate"></wux-cell>
+    </wux-cell-group>
+
+    <!-- Radio 组件 -->
+    <wux-radio-group value="{{ gongShiType }}" title="计算公式" bind:change="selectGongShiType">
+      <wux-radio title="以年月日变化量分别计算" label="本金 ×（Δ年 x 年利率 + Δ月 x 月利率 + Δ日 x 日利率）" value="1" color="dark" />
+      <wux-radio title="按间隔天数计算" label="本金 × 间隔天数 × 日利率（月按30天计）" value="2" color="dark" />
+    </wux-radio-group>
+
+    <wux-cell-group title="结果">
+      <wux-cell title="计算结果" extra="{{ result }}"></wux-cell>
+      <wux-cell title="间隔天数" wx:if="{{gongShiType == 2}}" extra="{{ days }}"></wux-cell>
+    </wux-cell-group>
+
+    <wux-button block outline type="dark" bind:click="calc">计算</wux-button>
+    <wux-button block outline type="dark" bind:click="reset">重置</wux-button>
+
+  </view>
+
+  <page-footer></page-footer>
+</view>
+

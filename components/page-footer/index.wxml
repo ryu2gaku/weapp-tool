@@ -1,0 +1,6 @@
+<!-- 页脚组件 -->
+<view class='footer'>
+  <view class='footer-text'>
+    Copyright © {{year}} {{author}}
+  </view>
+</view>

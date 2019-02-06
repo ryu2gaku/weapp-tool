@@ -1,0 +1,21 @@
+.head {
+  padding: 80rpx;
+}
+.head-title {
+    text-align: center;
+    font-size: 40rpx;
+    font-weight: 400;
+    color: #BEBEBE;
+}
+.head-line {
+  margin: 0 auto;
+  width: 180rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.head-desc {
+    margin-top: 20rpx;
+    color: #9B9B9B;
+    text-align: center;
+    font-size: 32rpx;
+}

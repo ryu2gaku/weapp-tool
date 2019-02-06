@@ -1,0 +1,29 @@
+<template name="executionCostCalcDesc">
+  <view class='desc-head'>执行费速算表</view>
+  <view class='desc-body'>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>没有执行金额或者价额</view>
+    <view class='desc-item-bd'>每件50元至500元</view>
+  </view>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>不超过1万元</view>
+    <view class='desc-item-bd'>每件50元</view>
+  </view>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>超过1万元至50万元</view>
+    <view class='desc-item-bd'>执行金额×1.5%-100元</view>
+  </view>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>超过50万元至500万元</view>
+    <view class='desc-item-bd'>执行金额×1%+2400元</view>
+  </view>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>超过500万元至1000万元</view>
+    <view class='desc-item-bd'>执行金额×0.5%+27400元</view>
+  </view>
+  <view class='desc-item'>
+    <view class='desc-item-bd'>超过1000万元</view>
+    <view class='desc-item-bd'>执行金额×0.1%+67400元</view>
+  </view>
+</view>
+</template>
