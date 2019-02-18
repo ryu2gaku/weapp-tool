@@ -1,7 +1,5 @@
 /**
  * @overview 版本更新
- * @author ryugaku <https://github.com/ryu2gaku>
- * @copyright ryugaku 2018
  */
 
 // 获取全局唯一的版本更新管理器

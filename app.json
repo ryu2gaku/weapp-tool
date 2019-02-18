@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/executionCost/index",
-    "pages/interest/index"
+    "pages/interest/index",
+    "pages/interest/interestRateTable/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

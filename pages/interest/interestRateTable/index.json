@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "page-footer": "/components/page-footer/index"
+  }
+}

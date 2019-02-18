@@ -8,7 +8,6 @@ const isNumber = valStr => /^[0-9]+\.?[0-9]*$/.test(valStr) ? true : false
  * 格式化 Date 为字符串
  * @param {Date} date
  * @return  {string} 格式为`年-月-日`
- * ---
  */
 const formatDate = date => {
   //【拓展】Array.prototype.map(cb) 对数组的每个元素调用定义的回调函数并返回包含结果的数组

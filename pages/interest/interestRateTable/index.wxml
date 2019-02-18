@@ -1,0 +1,30 @@
+<view>
+  <view class="page-head" bindtap="reverseShow">
+    <view class="page-head-title">
+      中国人民银行贷款基准利率 {{isDownArrow ? "⇩" : "⇧"}}
+    </view>
+  </view>
+
+  <view class="page-body page-bd-spacing">
+    <view class="table-info">单位：年利率%</view>
+    <view class="table">
+      <view class="tr" bindtap="reverseShow">
+        <view class="th">调整时间</view>
+        <view class="th">六个月以内</view>
+        <view class="th">六个月至一年</view>
+        <view class="th">一至三年</view>
+        <view class="th">三至五年</view>
+        <view class="th">五年以上</view>
+      </view>
+      <block wx:for="{{ interestRateList }}" wx:for-item="interestRate" wx:for-index="idx">
+        <view class="tr">
+          <view class="td">{{ interestRate.date }}</view>
+          <view class="td" wx:for="{{interestRate.rates}}" wx:for-item="rate">{{rate}}</view>
+        </view>
+      </block>
+    </view>
+    <view class="table-desc">注：2014 年 11 月 22 日之后，金融机构人民币贷款基准利率期限档次简并为一年以内、一至五年和五年以上三个档次。</view>
+  </view>
+
+  <page-footer></page-footer>
+</view>

@@ -46,6 +46,8 @@
           bind:clear="clearLiLv"
         />
       </wux-cell>
+      <!-- 跳转到人行贷款基准利率表页面 -->
+      <wux-cell title="人行贷款基准利率表" is-link url="./interestRateTable/index"></wux-cell>
     </wux-cell-group>
 
     <!-- Calendar组件 -->

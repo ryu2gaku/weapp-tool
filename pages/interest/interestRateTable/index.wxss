@@ -1,0 +1,50 @@
+.page-head {
+  padding: 30px 20px 10px;
+}
+.page-head-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.table {
+  border-top: 1rpx solid #E4E4E4;
+  border-left: 1rpx solid #E4E4E4;
+}
+.table-info {
+  text-align: right;
+  padding: 20rpx 20rpx 20rpx 0;
+  color: #656968;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tr:nth-child(odd) {
+  background-color: #F9FDFF;
+}
+.th {
+  font-weight: 400;
+  background-color: #F2F5FC;
+}
+.th,
+.td {
+  width: 100%;
+  padding: 8rpx 0;
+  border-bottom: 1rpx solid #E4E4E4;
+  border-right: 1rpx solid #E4E4E4;
+  box-shadow: 2rpx 2rpx 10rpx #E4E4E4;
+  text-align: center;
+}
+/* 每行除调整时间外的后五项内容水平垂直居中显示 */
+.td:nth-child(n+2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-desc {
+  margin-top: 20rpx;
+  text-indent: 2em;
+  color: #999999;
+}
